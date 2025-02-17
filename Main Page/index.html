@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang = "en-UK">
+    <head>
+	    <meta
+            charset = "UTF-8"
+            name = "viewport"
+            content = "width=device-width, initial-scale=1.0"
+		>
 
+    	<link
+            href = "../Bootstrap/bootstrap.min.css"
+            rel = "stylesheet"
+        >
+        
+        <link
+            href = "style.css"
+            rel = "stylesheet"
+        >
+
+        <script
+            src = "../jquery-3.7.1.js">
+        </script>
+    </head>
+
+    <body>
+        <nav
+            class = "navbar navbar-expand-sm navbar-light bg-light">
+
+            <div
+                class = "container-fluid">
+
+                <div
+                    class = "h3 text-center">
+                    Finance Pet
+                </div>
+
+               <ul
+                    class = "navbar-nav me-auto">
+                    <li 
+                        class = "nav-item">
+                        <a 
+                            class = "nav-link active"
+                            href = "">
+                            Home
+                        </a>
+                    </li>
+
+                    <li 
+                        class = "nav-item">
+                        <a 
+                            class = "nav-link"
+                            href = "../Game Page/index.html">
+                            Game
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <img
+            id = "catImage"
+            src = "../Images/SageCatFrame.gif"
+            class = "img-fluid mx-auto d-block"
+        >
+
+        <p
+            id = "amountSaved"
+            class = "text-white">
+            £0
+        </p>
+        
+        <div
+        	class = "progress">
+
+        	<div
+            	class = "progress-bar">
+        	</div>
+      	</div>
+
+        <button
+            id = "saveButton"
+            type = "button"
+            class = "btn btn-light text-black"
+            data-bs-toggle = "modal"
+            data-bs-target = "#popup">
+            Save
+        </button>
+
+        <div id="popup" class="modal fade">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content mx-auto">
+                <div class="modal-header">
+                  <h5 class="modal-title">Enter how much you want to input: </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input id="moneySaved" type="number" autocomplete="off">
+                </div>
+                <div class="modal-footer">
+                  <button id="inputButton" type="button" class="btn btn-light" data-bs-dismiss="modal">Save</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js">
+        </script>
+
+        <script
+            src = "../Bootstrap/bootstrap.bundle.min.js">
+        </script>
+
+        <script
+            src = "script.js">
+        </script>
+    </body>
+</html>
