@@ -1,0 +1,44 @@
+html, body
+{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    background-color: #2A52BE;
+}
+
+#lives
+{
+    margin: auto;
+    padding: 100px;
+    height: 25%;
+    line-height: 50%;
+    text-align: center;
+    font-size: 30px;
+}
+
+#word
+{
+    margin: auto;
+    height: 25%;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+}
+
+#output
+{
+    text-align: center;
+    font-size: 20px;
+}
+
+#keyboard
+{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+    gap: 10px;
+}
